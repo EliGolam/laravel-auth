@@ -18,6 +18,7 @@ class CreateCommentsTable extends Migration
 
             $table->string('title')->nullable();
             $table->foreignId('user_id');
+            $table->foreignId('post_id');
             $table->text('body');
 
             $table->timestamps();
